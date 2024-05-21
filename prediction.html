@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Performance Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Academic Performance Prediction System</h1>
+    <form id="predictionForm">
+        <div id="subject1">
+            <h2>Subject 1</h2>
+            <label for="subject1Name">Enter the subject name:</label>
+            <input type="text" id="subject1Name" name="subject1Name">
+            <br>
+            <label for="subject1Grades">Enter your grades:</label>
+            <input type="number" id="subject1Grades" name="subject1Grades">
+            <br>
+            <label for="subject1Attendance">Enter your attendance:</label>
+            <input type="text" id="subject1Attendance" name="subject1Attendance">
+            <br>
+        </div>
+
+        <div id="subject2" style="display:none;">
+            <h2>Subject 2</h2>
+            <label for="subject2Name">Enter the subject name:</label>
+            <input type="text" id="subject2Name" name="subject2Name">
+            <br>
+            <label for="subject2Grades">Enter your grades:</label>
+            <input type="number" id="subject2Grades" name="subject2Grades">
+            <br>
+            <label for="subject2Attendance">Enter your attendance:</label>
+            <input type="text" id="subject2Attendance" name="subject2Attendance">
+            <br>
+        </div>
+
+        <div id="subject3" style="display:none;">
+            <h2>Subject 3</h2>
+            <label for="subject3Name">Enter the subject name:</label>
+            <input type="text" id="subject3Name" name="subject3Name">
+            <br>
+            <label for="subject3Grades">Enter your grades:</label>
+            <input type="number" id="subject3Grades" name="subject3Grades">
+            <br>
+            <label for="subject3Attendance">Enter your attendance:</label>
+            <input type="text" id="subject3Attendance" name="subject3Attendance">
+            <br>
+        </div>
+
+        <button type="button" onclick="showSubject(2)">Next</button>
+        <button type="button" onclick="showSubject(3)" style="display:none;">Next</button>
+        <button type="button" onclick="predict()" style="display:none;">Predict</button>
+    </form>
+    
+    <!-- Display prediction result -->
+    <div id="predictionResult"></div>
+
+    <script src="external.js"></script>
+</body>
+</html>
